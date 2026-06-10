@@ -423,6 +423,29 @@ Se in futuro {dovesse interessarvi|cambiasse qualcosa}, resto disponibile.
 ```
 Il breakup funziona per un motivo preciso: togliere la disponibilità attiva la loss aversion ("ultima chiamata") e insieme dimostra che non sei lo spammer che insisterà per sempre — è l'email che sblocca più risposte "in realtà sì, parliamone" di quanto ci si aspetti.
 
+### 7.8 La libreria che si standardizza nel tempo
+
+Gli script qui sopra non sono un set fisso da copiare una volta: sono il punto di partenza di una **libreria viva** che migliora ad ogni campagna. È la differenza tra "ho un template" e "ho un sistema che converge sul template migliore".
+
+Il meccanismo è uno status lifecycle per ogni template (email, follow-up, risposta) e per ogni prompt AI:
+
+| Status | Significato |
+|--------|-------------|
+| `draft` | Scritto, mai testato |
+| `testing` | In A/B su un segmento, volume limitato |
+| `standard` | Ha vinto il test — è il default per quello slot |
+| `retired` | Superato da una versione migliore |
+
+La regola che rende il tutto un sistema e non una cartella di bozze: **lo standard si cambia solo coi dati, mai a sensazione.** Quando una variante batte lo standard su un segmento (reply rate, a parità di lista e infrastruttura), si promuove la nuova a `standard`, la vecchia va in `retired`, e si scrive una riga nel changelog **con il numero che ha giustificato la decisione**. È la stessa disciplina dell'iterazione per segmento (§9.4), applicata agli asset.
+
+Tre pezzi tengono insieme la libreria nel tempo:
+
+- **Registry delle variabili** — un set chiuso di variabili Clay-merge-safe (`{{first_name}}`, `{{company_name}}`, `{{trigger}}`, …). Se ne serve una nuova, si aggiunge al registry *prima* di usarla, così il merge non si rompe mai per una variabile orfana.
+- **Banca dello spintax** — frammenti riusabili (`{Buongiorno|Ciao|Salve}`, `{Ha senso|Vale la pena}`…), perché lo spintax deve stare su ogni frase (§7.4) e riscriverlo ogni volta è spreco.
+- **Changelog** — il diario delle promozioni: tra sei mesi, alla domanda "perché usiamo questa versione?", la risposta è scritta.
+
+Nel repo (§11) questo vive in `templates/` (i 6 framework + breakup + le 4 risposte + nurture, ognuno col suo frontmatter di status) e `prompts/` (la pipeline AI: ICP → offer → script → personalizzazione → classificazione risposte). La legge della libreria è `templates/_CONVENZIONI.md`.
+
 **Il ponte →** le email ci sono. Ma una email sola — anche perfetta — lascia sul tavolo quasi metà dei risultati. I numeri nella sezione 8.
 
 ---
@@ -584,6 +607,19 @@ cold-email-system/
 ├── README.md                              ← questa guida (la mappa completa)
 ├── infrastruttura/
 │   └── setup-checklist.md                 ← checklist domini/DNS/warmup da spuntare
+├── templates/                             ← LIBRERIA VIVA (§7.8) — versionata per status
+│   ├── _CONVENZIONI.md                    ← la legge: status, variabili, spintax, naming
+│   ├── _CHANGELOG.md                      ← diario delle promozioni a standard
+│   ├── email/                             ← i 6 framework + breakup (ognuno col suo status)
+│   ├── follow-up/                         ← subsequence di nurture (riciclo 60-90gg)
+│   └── reply/                             ← le 4 categorie di reply management + opt-out
+├── prompts/                               ← pipeline AI versionata
+│   ├── 01-icp-research.md                 ← ICP + decisore
+│   ├── 02-offer-creation.md               ← frontend offer
+│   ├── 03-script-generation.md           ← script 3 tier × 3 lunghezze (specs RevGrowth)
+│   ├── 04-personalization.md             ← riga {{trigger}} da enrichment
+│   ├── 05-reply-classification.md        ← classifica risposte → bozza
+│   └── _CHANGELOG.md
 ├── sequenze/
 │   └── sequenza-esempio-v1.md             ← sequenza completa con spintax e variabili
 ├── resources/
