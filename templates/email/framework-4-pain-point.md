@@ -2,12 +2,12 @@
 id: framework-4-pain-point
 tipo: email
 framework: 4
-status: draft
+status: standard
 versione: 1.0
 segmento: generico
 lingua: it
 ultimo_aggiornamento: 2026-06-10
-metrica: ""
+metrica: "standardizzato come default v1.0 (email 4, social proof peer) · primo A/B dal primo ciclo campagne"
 ---
 
 # Framework 4 — Pain Point

@@ -44,15 +44,12 @@ Tre livelli di provenienza:
 
 ---
 
-## Il limite onesto
+## Nota sui prompt 01/02/04/05
 
-Le risorse salvate contengono la **metodologia completa e le specifiche dei prompt**, ma NON il testo integrale dei prompt che coldemailchris usa. In particolare:
+Le risorse salvate contengono la **metodologia completa e le specifiche dei prompt**, ma non il testo integrale dei prompt che coldemailchris usa: il corso cita un "7-prompt process" (tweet, riga 146) e un modulo "Strategy Development via AI Prompting" (youtube riga 23) senza trascriverli. Per questo i prompt `01`, `02`, `04`, `05` sono composizione che **esegue la loro metodologia** sui moduli che il corso nomina (ICP Modeling, Offer Creation, Reply Management — youtube 22-27).
 
-- Il corso cita un "**7-prompt process**" per Research & Development (tweet, riga 146) e un modulo "**Strategy Development via AI Prompting**" (youtube riga 23) — ma i prompt veri, parola per parola, non sono trascritti nelle risorse.
-- Per questo i prompt `01`, `02`, `04`, `05` sono **mia composizione che esegue la loro metodologia**, non copia dei loro prompt.
-
-**Se serve la massima fedeltà**, i prompt reali di coldemailchris si possono recuperare dalle fonti vive (il video YouTube modulo 3-4, i suoi articoli su X). Si sostituiscono gli scaffold 🟡 con i testi 🟢 e si aggiorna questa tabella. Finché non lo si fa, questi quattro prompt restano "applicazione fedele", non "sorgente verbatim" — ed è giusto saperlo.
+**Sono standardizzati come parte del sistema Madani v1.0.** Questo è lo standard: i quattro prompt eseguono fedelmente il metodo RevGrowth e sono i default di produzione. Non c'è un'azione pendente — la mappa qui sopra resta come record onesto di cosa è sorgente verbatim (🟢), cosa è applicazione del metodo (🟡) e cosa è layer aggiunto (🔵).
 
 ---
 
-_Aggiornare questo file ogni volta che si sostituisce un'applicazione con la fonte verbatim, o si aggiunge una nuova risorsa di partenza._
+_Aggiornare questo file solo se si aggiunge una nuova risorsa di partenza o si ri-promuove un template/prompt sui dati di una campagna._

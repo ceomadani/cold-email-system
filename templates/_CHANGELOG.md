@@ -35,4 +35,15 @@ Metrica di partenza: nessun A/B ancora. Gli `standard` v1.0 sono i default ragio
 
 ---
 
+## 2026-06-10 · standardizzazione libreria · draft→standard
+
+Promossi a `standard` v1.0 gli ultimi 3 template che erano `draft`:
+- `framework-1-lead-magnet`
+- `framework-4-pain-point`
+- `framework-6-market-intel`
+
+Ora **tutta la libreria è `standard`**: 7 template email (6 framework + breakup), 4 risposte, 1 nurture, 5 prompt. È il set canonico di partenza del sistema Madani cold email. Sono default standardizzati per decisione (non vincitori di A/B): il primo ciclo di campagne genererà i numeri per le prime ri-promozioni basate sui dati. Da qui in poi lo standard si cambia solo coi numeri (`_CONVENZIONI.md` §1).
+
+---
+
 <!-- Le prossime entry vanno sopra questa riga, in ordine cronologico inverso (più recente in alto, sotto il titolo). -->

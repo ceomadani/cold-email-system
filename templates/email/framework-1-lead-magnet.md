@@ -2,12 +2,12 @@
 id: framework-1-lead-magnet
 tipo: email
 framework: 1
-status: draft
+status: standard
 versione: 1.0
 segmento: generico
 lingua: it
 ultimo_aggiornamento: 2026-06-10
-metrica: ""
+metrica: "standardizzato come default v1.0 (lead magnet) · primo A/B dal primo ciclo campagne"
 ---
 
 # Framework 1 — Lead Magnet
