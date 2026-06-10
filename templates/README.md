@@ -33,6 +33,10 @@ templates/
 3. **Vuoi migliorare un template?** Crea la variante con suffisso lettera (`framework-2-free-work-b.md`, status `testing`), A/B test su un segmento a parità di lista.
 4. **La variante vince?** Promuovila a `standard`, manda la vecchia in `retired`, scrivi la riga nel `_CHANGELOG.md` col numero che l'ha giustificata.
 
+## Provenienza
+
+Cosa di questa libreria è preso dalle risorse RevGrowth/@coldemailchris e cosa è composizione/aggiunta: vedi `../PROVENANCE.md` (mappa riga-per-riga). In breve: framework, regole copy, sequenzialità, checklist e categorie di risposta sono **sorgente**; il testo italiano dei template è **applicazione** della loro struttura; lo status lifecycle è **aggiunta**.
+
 ## Perché questo sistema
 
 Senza, dopo sei mesi hai venti versioni di ogni email e nessuno sa quale usare. Con lo status lifecycle, in ogni momento c'è **un solo `standard` per slot**, e la storia di come ci si è arrivati è nel changelog. È la stessa disciplina dell'iterazione per segmento della guida (§9.4): si cambia lo standard solo coi dati, mai a sensazione.

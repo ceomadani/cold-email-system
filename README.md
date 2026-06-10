@@ -662,6 +662,7 @@ Trascrizioni complete in `resources/`.
 | Risorsa | Path |
 |---------|------|
 | **Repo GitHub deployabile** | `github.com/ceomadani/cold-email-system` |
+| **Provenienza riga-per-riga** | `PROVENANCE.md` (cosa è sorgente RevGrowth vs applicazione vs aggiunta) |
 | Skill canonical | `~/.claude/skills/cold-email-outreach/SKILL.md` |
 | Risorse complete (18 sezioni) | `email-marketing/RISORSE-COMPLETE-EMAIL-MARKETING.md` |
 | Catalogo OSINT curato (100+ tool) | `email-marketing/tools/osint-tools-catalog.md` |
