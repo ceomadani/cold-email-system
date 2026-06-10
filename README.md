@@ -333,7 +333,7 @@ Sembra troppo semplice per funzionare — funziona *perché* è semplice: una do
 
 Ognuna deriva o dai filtri (§2) o dalla psicologia (§7.1):
 
-- Subject: **1-3 parole**, no punteggiatura, in spintax — un collega ti scrive "fattura marzo", non "Opportunità imperdibile per la vostra azienda! 🚀"
+- Subject: **1-3 parole**, no punteggiatura, in spintax — un collega ti scrive "fattura marzo", non "Opportunità imperdibile per la vostra azienda!"
 - Body: **sotto 65-70 parole** (bande target: 30 / 45 / 60)
 - Prima frase interamente sul destinatario; problema PRIMA della soluzione
 - CTA soft/value-based: "Worth a quick look?", "Ha senso parlarne?"
