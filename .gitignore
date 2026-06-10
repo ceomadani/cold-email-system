@@ -1,0 +1,19 @@
+# Dati e output — mai committare liste, contatti, PII
+*.csv
+*.json
+!package.json
+output/
+data/
+enriched/
+__pycache__/
+*.pyc
+
+# Credenziali
+.env
+.envrc
+*session*
+*token*
+*credentials*
+
+# Build PDF
+*.pdf
